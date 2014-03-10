@@ -4,17 +4,18 @@ clear all; close all; dbstop error;
 
 % parameter settings (for an example, please download
 % sequence '2010_03_09_drive_0019' from www.cvlibs.net)
-%img_dir      = '/home/geiger/5_Data/kitti/2011_stereo/2010_03_09_drive_0019';
-img_dir    = '/Users/zx/Documents/Projects/SLAM/open-source/libviso2/img/2010_03_09_drive_0019';
-% img_dir    = '/Users/zx/Documents/Projects/SLAM/Open Source/libviso2/img/2010_03_09_drive_0020';
-%img_dir     = 'C:\Users\geiger\Desktop\2010_03_09_drive_0019';
+% img_dir    = '/Users/zx/Documents/Projects/SLAM/open-source/libviso2/img/2010_03_09_drive_0019';
+% img_dir    = '/Users/zx/Documents/Projects/SLAM/open-source/libviso2/img/2010_03_09_drive_0020';
+img_dir      = '/Users/zx/Documents/Projects/SLAM/open-source/libviso2/img/2014_03_10_corridor_0001';
+
+
 param.f      = 645.2;
 param.cu     = 635.9;
 param.cv     = 194.1;
 param.height = 1.6;
 param.pitch  = -0.08;
-first_frame  = 0;
-last_frame   = 372;
+first_frame  = 1;
+last_frame   = 1080;
 
 % init visual odometry
 visualOdometryMonoMex('init',param);
